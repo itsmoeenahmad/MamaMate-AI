@@ -1,5 +1,3 @@
-**MamaMate AI – LangChain Backend for Women's Health Assistant**
-
 This is the backend codebase for **MamaMate**, an AI-powered assistant for women. It uses **LangChain**, **OpenAI**, **FastAPI**, **ChromaDB**, and **MongoDB** to deliver intelligent, context-aware support in gynecology, sex education, mental wellness, and motherhood.
 
 
