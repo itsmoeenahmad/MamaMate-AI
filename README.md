@@ -1,10 +1,10 @@
-# MamaMate AI – LangChain Backend for Women's Health Assistant
+# MamaMate AI – For Women's Health Assistant
 
 This is the backend codebase for **MamaMate**, an AI-powered assistant for women. It uses **LangChain**, **OpenAI**, **FastAPI**, **ChromaDB**, and **MongoDB** to deliver intelligent, context-aware support in gynecology, sex education, mental wellness, and motherhood.
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 | Component        | Tool Used           | Purpose                         |
 |------------------|---------------------|----------------------------------|
@@ -16,35 +16,22 @@ This is the backend codebase for **MamaMate**, an AI-powered assistant for women
 
 ---
 
-## 🧠 Features
+## Features
 
-- 🔍 **Agentic RAG System** using LangChain
+- **Agentic RAG System** using LangChain
   - Retrieves answers from uploaded books/resources
-  - Agent follows ReAct-style reasoning
-- 🧠 **Memory Integration**
+  - Agent uses OpenAI Tool Calling to decide and execute multi-step tasks
+- **Memory Integration**
   - MongoDB-based memory stores chat history and context
-- 📂 **Tool Calling (OpenAI)**
+- **Tool Calling (OpenAI)**
   - Custom AI agents execute multi-step tasks
-- 🔌 **FastAPI Endpoints**
+- **FastAPI Endpoints**
   - Clean RESTful API to connect with the frontend (mobile or web)
 
 ---
 
-## 📁 Project Structure
+**Before You Use the Code**
 
-```bash
-mamamate-ai-backend/
-├── api/                     # FastAPI route handlers
-│   ├── chat.py              # Main chat endpoint
-│   └── auth.py              # Optional: Auth routes if used
-├── agents/                  # LangChain agent setup
-│   └── custom_agent.py
-├── rag/                     # RAG system (Chroma setup, documents)
-│   ├── retriever.py
-│   └── ingest_docs.py
-├── memory/                  # MongoDB memory handler
-│   └── memory_manager.py
-├── tools/                   # Optional custom tools
-├── main.py                  # FastAPI app entry point
-├── requirements.txt         # Python dependencies
-└── README.md
+Take a moment to read through the code instead of just copy-pasting it. I have added comments to explain each part so you can understand what is happening step by step.
+
+If anything is unclear or you are stuck, feel free to reach out - you can DM me on Instagram or LinkedIn. I am happy to help!
